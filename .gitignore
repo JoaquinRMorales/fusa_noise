@@ -1,3 +1,4 @@
 This is a gitignore
 PATAGON/
 *dvc*
+*pycache*

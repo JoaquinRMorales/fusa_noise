@@ -9,4 +9,4 @@ import waver as wv
 
 wavs = wv.Wavs(0.5)
 print(wavs.metadata)
-wavs.export_data()
+wavs.export_data('noise')

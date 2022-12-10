@@ -27,15 +27,15 @@ class Wavs:
 
         return df
         
-    def export_data(self):
+    def export_data(self, filename):
 
         root = Tk()
         root.withdraw()
         foldername = filedialog.askdirectory()
-        foldername = foldername + '/wavs_metadata.txt'
+        foldername = foldername + '/' + filename + '.txt'
 
         try:
-            self.metadata.to_csv(foldername, sep = ' ', mode = 'a')
+            self.metadata.to_csv(foldername, sep = ' ', mode = 'a', index =0 )
             print('Data exported!')
 
         except :

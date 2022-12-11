@@ -27,13 +27,10 @@ class Wavs:
 
         return df
         
-    def export_data(self, dataframe, filename):
+    def export_data(self, dataframe, filename, targetfolder):
 
-        root = Tk()
-        root.withdraw()
-        foldername = filedialog.askdirectory(title='Select folder to save dataframe')
-        foldername = foldername + '/' + filename + '.txt'
-        root.destroy()
+        foldername = targetfolder + '/' + filename + '.txt'
+
 
         try:
             dataframe.to_csv(foldername, sep = ' ', mode = 'a', index = 0 )
@@ -70,10 +67,10 @@ class Wavs:
 
     def classifier(self, threshold):
 
-        root = Tk()
-        root.withdraw()
-        foldername = filedialog.askdirectory(title='Select wavs folders for classification')
+        foldername = self.select_folder('Select wavs folders for classification')
         folder = foldername.rsplit('/', 1)[-1]
+
+        targetfolder = self.select_folder('Select dataframe destiny folder')
 
         columns = ['filename', 'original wav', 'label', 'station', 'duration', 'power']
         df = pd.DataFrame(columns=columns)
@@ -107,8 +104,19 @@ class Wavs:
         
 
 
-        self.export_data(df, folder)
+        self.export_data(df, folder, targetfolder)
+ 
+
+
+    def select_folder(self, text):
+
+        root = Tk()
+        root.withdraw()
+        foldername = filedialog.askdirectory(title=text)
+
         root.destroy()
+
+        return foldername
                 
 
 

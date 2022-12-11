@@ -4,6 +4,7 @@ import scipy.fftpack as fourier
 import contextlib
 import wave
 
+
 def cepstrum(ruta):
 	audio= ruta
 	muestreo, sonido = waves.read(audio)

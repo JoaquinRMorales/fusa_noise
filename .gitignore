@@ -3,3 +3,5 @@ PATAGON/
 *dvc*
 *pycache*
 Audios/*
+DATA/*
+*checkpoints*

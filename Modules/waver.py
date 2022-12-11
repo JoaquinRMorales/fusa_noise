@@ -20,7 +20,7 @@ class Wavs:
         root = Tk()
         root.withdraw()
         filename = filedialog.askopenfilename(title = 'Select dataframe .txt format and space separation')
-
+        print('Selection: %s' %(filename))
         df = pd.read_csv(filename, sep=' ')
 
         root.destroy()

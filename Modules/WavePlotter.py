@@ -3,14 +3,15 @@ import numpy as np
 import pandas as pd
 import torchaudio
 import torchaudio.functional as functional
-import torchaudio.transform as transform
+import torchaudio.transforms as T
 
 from IPython.display import Audio, display, clear_output, HTML
 from scipy import signal
+from tkinter import Tk, ttk, messagebox, filedialog, Listbox, Button
 
 class WavePlot():
 
-    def __init__():
+    def __init__(self):
         self.metadata = self.looker()
 
 
@@ -18,7 +19,7 @@ class WavePlot():
         root = Tk()
         root.withdraw()
         filename = filedialog.askopenfilename(title = 'Select dataframe .txt format and space separation')
-
+        print('Selection: %s' %(filename))
         df = pd.read_csv(filename, sep=' ')
 
         root.destroy()
@@ -38,10 +39,10 @@ class WavePlot():
 
     def welch_periodogram(self, path):
 
-        waveformm, sample_rate = torchaudio.load(path)
+        waveform, sample_rate = torchaudio.load(path)
 
         resample_rate = 32000
-        resampler = transform.Resample(sample_rate, resample_rate, dtype = waveform.dtype)
+        resampler = T.Resample(sample_rate, resample_rate, dtype = waveform.dtype)
         resampled_waveform = resampler(waveform)
 
         segment = int( 0.5*resample_rate )
@@ -54,7 +55,7 @@ class WavePlot():
 
         myparams2 = dict(fs = resample_rate, nperseg = segment, window = myhann, noverlap = segment/2, scaling = 'density', return_onesided=True)
 
-        freq, psd = signal.welch( x = resample_rate, **myparams2)
+        freq, psd = signal.welch( x = resampled_waveform, **myparams2)
         psd = 2*psd
 
         dfreq = freq[1]
@@ -79,16 +80,16 @@ class WavePlot():
 
             wav_path = folderpath + '/' + self.metadata.at[i, 'filename']
 
-            wav_freq, normalized_psd_dB = welch_periodogram(wav_path)
+            wav_freq, normalized_psd_dB = self.welch_periodogram(wav_path)
 
             mean_value.append(normalized_psd_dB)
 
-        normalized_psd_dB = np.array(normalized_psd_dB)
-        normalized_psd_dB = np.mean(normalized_psd_dB, axis = 0)
+        mean_value = np.array(normalized_psd_dB)
+        mean_value = np.mean(normalized_psd_dB, axis = 0)
 
         figure, ax = plt.subplots(figsize = (13,8))
 
-        ax = plt.semilogx(wav_freq, mean_value.T, 'b', label = 'test')
+        ax = plt.semilogx(wav_freq, mean_value.T , 'b', label = 'test')
 
         return ax 
 

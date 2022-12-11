@@ -61,7 +61,7 @@ class Wavs:
 
         else:
             print('Waveform error')
-            return None, None
+            return 0, 0
 
 
 
@@ -80,6 +80,7 @@ class Wavs:
         for i in range(len(os.listdir(foldername))):
             clear_output(wait=True)
             print('%s folder is being classified' %(folder))
+            print('Reading %s' %(os.listdir(foldername)[i]))
             print(i+1, '/' ,len(os.listdir(foldername)))
             print('Ignored audios [threshold = %f sec]: %d' %(threshold, filtered_audios))
             row = []

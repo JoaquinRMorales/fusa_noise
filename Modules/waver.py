@@ -89,11 +89,12 @@ class Wavs:
                     
                 if(str(self.metadata.at[x, 'filename'].replace('.wav', '')).replace('.mp3', '') in os.listdir(foldername)[i]):
 
-
-                    row_filename = os.listdir(foldername)[i]
-                    row_originalwav = str(self.metadata.at[x, 'filename'].replace('.wav', '')).replace('.mp3', '')
                     row_station = self.metadata.at[x, 'station']
                     print(row_station)
+                    
+                    row_filename = os.listdir(foldername)[i]
+                    row_originalwav = str(self.metadata.at[x, 'filename'].replace('.wav', '')).replace('.mp3', '')
+                    
                     row_duration, row_power = self.audio_power(foldername, row_filename)
                     row = [ row_filename, row_originalwav, folder, row_station, row_duration, row_power]
                     if(row_duration >= threshold):

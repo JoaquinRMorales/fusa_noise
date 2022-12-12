@@ -97,18 +97,8 @@ class WavePlot():
 
         for est in self.metadata['station'].unique():
 
-            
-
             stations[est] = np.mean(stations[est], axis = 0)
             station_wav_freq[est] = np.mean(station_wav_freq[est], axis = 0)
-
-
-            print(est)
-            print('...')
-            print(stations[est])
-            print('-----------------------------------------------------')
-            print(station_wav_freq[est])
-            print('###########################################################')
 
             plt.semilogx(station_wav_freq[est], stations[est].T , color = color[est], label = est, alpha=0.4)
         

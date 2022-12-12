@@ -70,11 +70,11 @@ class WavePlot():
 
         folderpath = self.select_folder('Select wavs folder')
 
-        mean_value = []
-
         stations = dict.fromkeys(self.metadata['station'].unique(), [])
+        station_wav_freq = dict.fromkeys(self.metadata['station'].unique(), [])
 
         for i in range(len(self.metadata)):
+
             clear_output(wait = True)
             print('Working at:', folderpath)
             print(self.metadata.at[i, 'filename'])
@@ -84,20 +84,39 @@ class WavePlot():
 
             wav_freq, normalized_psd_dB = self.welch_periodogram(wav_path)
 
-            stations[self.metadata.at[i, 'station']].append(normalized_psd_dB)
+            stationFreq_aux = station_wav_freq[self.metadata.at[i, 'station']].copy()
+            stationFreq_aux.append(wav_freq)
+            station_wav_freq[self.metadata.at[i, 'station']] = stationFreq_aux
+
+            station_aux = stations[self.metadata.at[i, 'station']].copy()
+            station_aux.append(normalized_psd_dB)
+            stations[self.metadata.at[i, 'station']] = station_aux
 
         figure, ax = plt.subplots(figsize = (13,8))
         
+
         for est in self.metadata['station'].unique():
+
+            
+
+            stations[est] = np.mean(stations[est], axis = 0)
+            station_wav_freq[est] = np.mean(station_wav_freq[est], axis = 0)
+
+
             print(est)
-            stations[est] = np.mean(stations[est], axis = 0)          
-            ax = plt.semilogx(wav_freq, stations[est].T , color = color[est], label = est, alpha=0.5)
+            print('...')
+            print(stations[est])
+            print('-----------------------------------------------------')
+            print(station_wav_freq[est])
+            print('###########################################################')
+
+            plt.semilogx(station_wav_freq[est], stations[est].T , color = color[est], label = est, alpha=0.4)
+        
         
         title = 'PSD of %s' %(self.metadata.at[0, 'label'])
         plt.title(title, fontsize=12)
         plt.legend()
 
-        return ax 
 
 
 

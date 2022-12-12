@@ -66,11 +66,13 @@ class WavePlot():
         return freq, normalized_psd_dB
 
 
-    def Mean_Power_Spectral_Density(self):
+    def Mean_Power_Spectral_Density(self, color):
 
         folderpath = self.select_folder('Select wavs folder')
 
         mean_value = []
+
+        stations = dict.fromkeys(self.metadata['station'].unique(), [])
 
         for i in range(len(self.metadata)):
             clear_output(wait = True)
@@ -82,14 +84,18 @@ class WavePlot():
 
             wav_freq, normalized_psd_dB = self.welch_periodogram(wav_path)
 
-            mean_value.append(normalized_psd_dB)
-
-        mean_value = np.array(normalized_psd_dB)
-        mean_value = np.mean(normalized_psd_dB, axis = 0)
+            stations[self.metadata.at[i, 'station']].append(normalized_psd_dB)
 
         figure, ax = plt.subplots(figsize = (13,8))
-
-        ax = plt.semilogx(wav_freq, mean_value.T , 'b', label = 'test')
+        
+        for est in self.metadata['station'].unique():
+            print(est)
+            stations[est] = np.mean(stations[est], axis = 0)          
+            ax = plt.semilogx(wav_freq, stations[est].T , color = color[est], label = est, alpha=0.5)
+        
+        title = 'PSD of %s' %(self.metadata.at[0, 'label'])
+        plt.title(title, fontsize=12)
+        plt.legend()
 
         return ax 
 

@@ -13,6 +13,7 @@ class WavePlot():
 
     def __init__(self):
         self.metadata = self.looker()
+        self.plotdata = None
 
 
     def looker(self):
@@ -73,6 +74,8 @@ class WavePlot():
         stations = dict.fromkeys(self.metadata['station'].unique(), [])
         station_wav_freq = dict.fromkeys(self.metadata['station'].unique(), [])
 
+        plot_data_list = []
+
         for i in range(len(self.metadata)):
 
             clear_output(wait = True)
@@ -100,12 +103,40 @@ class WavePlot():
             stations[est] = np.mean(stations[est], axis = 0)
             station_wav_freq[est] = np.mean(station_wav_freq[est], axis = 0)
 
-            plt.semilogx(station_wav_freq[est], stations[est].T , color = color[est], label = est, alpha=0.4)
+            plot_data_list.append([est, station_wav_freq[est], stations[est].T, self.metadata.at[0, 'label']])
+
+            plt.semilogx(station_wav_freq[est], stations[est].T , color = color[est], label = est, alpha=0.35)
         
         
-        title = 'PSD of %s' %(self.metadata.at[0, 'label'])
+        self.plotdata = pd.DataFrame(plot_data_list, columns = ['station', 'X [frequency]', 'Y [psd]', 'label'])
+
+        title = 'Mean PSD of %s' %(self.metadata.at[0, 'label'])
+        plt.xlabel('Frequency (Hz)'), plt.ylabel('Power spectral density ($dB/Hz)$') 
         plt.title(title, fontsize=12)
         plt.legend()
+
+
+
+def PSD_plot(df, station, label):
+
+    figure, ax = plt.subplots(figsize = (13,8))
+
+    for i in range(len(df)):
+
+        if(df.at[i, 'station'] in station):
+            if(df.at[i, 'label'] in label):
+
+                plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'].flatten(), label = [df.at[i, 'station'], df.at[i, 'label']], alpha = 0.45)
+    
+    
+    stations_names = ' - '.join(station)
+    label_names = ' - '.join(label)
+
+    title = 'Mean psd of [ %s ] in [ %s ]' %(label_names, stations_names)
+
+    plt.xlabel('Frequency (Hz)'), plt.ylabel('Power spectral density ($dB/Hz)$') 
+    plt.title(title)
+    plt.legend()
 
 
 

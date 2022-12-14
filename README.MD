@@ -42,301 +42,182 @@
     <div align = "center">
         <table border="1" class="dataframe">
           <thead>
-            <tr style="text-align: center;">
+            <tr style="text-align: right;">
               <th></th>
-              <th>label</th>
-              <th>Total label time</th>
-              <th>Mean duration per label</th>
+              <th>Label</th>
+              <th>Label Counts</th>
+              <th>Total Label Time [s]</th>
+              <th>Mean Duration per Label [s]</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>1</th>
-              <td>airborne</td>
-              <td>1514.2</td>
-              <td>10.7</td>
+              <td style="text-align: center">airborne</td>
+              <td style="text-align: center">141</td>
+              <td style="text-align: center">1514.2</td>
+              <td style="text-align: center">10.7</td>
             </tr>
             <tr>
               <th>2</th>
-              <td>air_conditioner</td>
-              <td>35.2</td>
-              <td>11.7</td>
+              <td style="text-align: center">air_conditioner</td>
+              <td style="text-align: center">3</td>
+              <td style="text-align: center">35.2</td>
+              <td style="text-align: center">11.7</td>
             </tr>
             <tr>
               <th>3</th>
-              <td>alarm</td>
-              <td>4163.9</td>
-              <td>7.3</td>
+              <td style="text-align: center">alarm</td>
+              <td style="text-align: center">567</td>
+              <td style="text-align: center">4163.9</td>
+              <td style="text-align: center">7.3</td>
             </tr>
             <tr>
               <th>4</th>
-              <td>bells</td>
-              <td>14.6</td>
-              <td>1.6</td>
+              <td style="text-align: center">bells</td>
+              <td style="text-align: center">9</td>
+              <td style="text-align: center">14.6</td>
+              <td style="text-align: center">1.6</td>
             </tr>
             <tr>
               <th>5</th>
-              <td>bird</td>
-              <td>12513.0</td>
-              <td>4.5</td>
+              <td style="text-align: center">bird</td>
+              <td style="text-align: center">2801</td>
+              <td style="text-align: center">12513.0</td>
+              <td style="text-align: center">4.5</td>
             </tr>
             <tr>
               <th>6</th>
-              <td>braking</td>
-              <td>463.0</td>
-              <td>2.1</td>
+              <td style="text-align: center">braking</td>
+              <td style="text-align: center">222</td>
+              <td style="text-align: center">463.0</td>
+              <td style="text-align: center">2.1</td>
             </tr>
             <tr>
               <th>7</th>
-              <td>bus_idling</td>
-              <td>6808.8</td>
-              <td>15.3</td>
+              <td style="text-align: center">bus_idling</td>
+              <td style="text-align: center">446</td>
+              <td style="text-align: center">6808.8</td>
+              <td style="text-align: center">15.3</td>
             </tr>
             <tr>
               <th>8</th>
-              <td>bus_moving</td>
-              <td>7105.1</td>
-              <td>11.2</td>
+              <td style="text-align: center">bus_moving</td>
+              <td style="text-align: center">634</td>
+              <td style="text-align: center">7105.1</td>
+              <td style="text-align: center">11.2</td>
             </tr>
             <tr>
               <th>9</th>
-              <td>car_idling</td>
-              <td>2468.6</td>
-              <td>12.6</td>
+              <td style="text-align: center">car_idling</td>
+              <td style="text-align: center">196</td>
+              <td style="text-align: center">2468.6</td>
+              <td style="text-align: center">12.6</td>
             </tr>
             <tr>
               <th>10</th>
-              <td>crowd</td>
-              <td>1962.3</td>
-              <td>10.1</td>
+              <td style="text-align: center">crowd</td>
+              <td style="text-align: center">194</td>
+              <td style="text-align: center">1962.3</td>
+              <td style="text-align: center">10.1</td>
             </tr>
             <tr>
               <th>11</th>
-              <td>cutting</td>
-              <td>1916.9</td>
-              <td>8.8</td>
+              <td style="text-align: center">cutting</td>
+              <td style="text-align: center">218</td>
+              <td style="text-align: center">1916.9</td>
+              <td style="text-align: center">8.8</td>
             </tr>
             <tr>
               <th>12</th>
-              <td>drilling</td>
-              <td>847.5</td>
-              <td>5.5</td>
+              <td style="text-align: center">drilling</td>
+              <td style="text-align: center">155</td>
+              <td style="text-align: center">847.5</td>
+              <td style="text-align: center">5.5</td>
             </tr>
             <tr>
               <th>13</th>
-              <td>explosives</td>
-              <td>1.6</td>
-              <td>0.8</td>
+              <td style="text-align: center">explosives</td>
+              <td style="text-align: center">2</td>
+              <td style="text-align: center">1.6</td>
+              <td style="text-align: center">0.8</td>
             </tr>
             <tr>
               <th>14</th>
-              <td>fireworks</td>
-              <td>7.8</td>
-              <td>2.0</td>
+              <td style="text-align: center">fireworks</td>
+              <td style="text-align: center">4</td>
+              <td style="text-align: center">7.8</td>
+              <td style="text-align: center">2.0</td>
             </tr>
             <tr>
               <th>15</th>
-              <td>horn</td>
-              <td>1753.1</td>
-              <td>1.4</td>
+              <td style="text-align: center">horn</td>
+              <td style="text-align: center">1294</td>
+              <td style="text-align: center">1753.1</td>
+              <td style="text-align: center">1.4</td>
             </tr>
             <tr>
               <th>16</th>
-              <td>impact</td>
-              <td>590.1</td>
-              <td>2.1</td>
+              <td style="text-align: center">impact</td>
+              <td style="text-align: center">286</td>
+              <td style="text-align: center">590.1</td>
+              <td style="text-align: center">2.1</td>
             </tr>
             <tr>
               <th>17</th>
-              <td>motorcycle_idling</td>
-              <td>329.8</td>
-              <td>7.9</td>
+              <td style="text-align: center">motorcycle_idling</td>
+              <td style="text-align: center">42</td>
+              <td style="text-align: center">329.8</td>
+              <td style="text-align: center">7.9</td>
             </tr>
             <tr>
               <th>18</th>
-              <td>motorcycle_moving</td>
-              <td>5555.2</td>
-              <td>8.1</td>
+              <td style="text-align: center">motorcycle_moving</td>
+              <td style="text-align: center">689</td>
+              <td style="text-align: center">5555.2</td>
+              <td style="text-align: center">8.1</td>
             </tr>
             <tr>
               <th>19</th>
-              <td>music</td>
-              <td>7400.0</td>
-              <td>19.6</td>
+              <td style="text-align: center">music</td>
+              <td style="text-align: center">378</td>
+              <td style="text-align: center">7400.0</td>
+              <td style="text-align: center">19.6</td>
             </tr>
             <tr>
               <th>20</th>
-              <td>shouting</td>
-              <td>793.4</td>
-              <td>2.5</td>
+              <td style="text-align: center">shouting</td>
+              <td style="text-align: center">317</td>
+              <td style="text-align: center">793.4</td>
+              <td style="text-align: center">2.5</td>
             </tr>
             <tr>
               <th>21</th>
-              <td>siren</td>
-              <td>4513.3</td>
-              <td>13.4</td>
+              <td style="text-align: center">siren</td>
+              <td style="text-align: center">337</td>
+              <td style="text-align: center">4513.3</td>
+              <td style="text-align: center">13.4</td>
             </tr>
             <tr>
               <th>22</th>
-              <td>steps</td>
-              <td>393.2</td>
-              <td>4.3</td>
+              <td style="text-align: center">steps</td>
+              <td style="text-align: center">92</td>
+              <td style="text-align: center">393.2</td>
+              <td style="text-align: center">4.3</td>
             </tr>
             <tr>
               <th>23</th>
-              <td>talk</td>
-              <td>5329.2</td>
-              <td>5.7</td>
+              <td style="text-align: center">talk</td>
+              <td style="text-align: center">940</td>
+              <td style="text-align: center">5329.2</td>
+              <td style="text-align: center">5.7</td>
             </tr>
             <tr>
               <th>24</th>
-              <td>water</td>
-              <td>279.7</td>
-              <td>16.5</td>
-            </tr>
-            <tr>
-              <th>25</th>
-              <td>airborne</td>
-              <td>1514.2</td>
-              <td>10.7</td>
-            </tr>
-            <tr>
-              <th>26</th>
-              <td>air_conditioner</td>
-              <td>35.2</td>
-              <td>11.7</td>
-            </tr>
-            <tr>
-              <th>27</th>
-              <td>alarm</td>
-              <td>4163.9</td>
-              <td>7.3</td>
-            </tr>
-            <tr>
-              <th>28</th>
-              <td>bells</td>
-              <td>14.6</td>
-              <td>1.6</td>
-            </tr>
-            <tr>
-              <th>29</th>
-              <td>bird</td>
-              <td>12513.0</td>
-              <td>4.5</td>
-            </tr>
-            <tr>
-              <th>30</th>
-              <td>braking</td>
-              <td>463.0</td>
-              <td>2.1</td>
-            </tr>
-            <tr>
-              <th>31</th>
-              <td>bus_idling</td>
-              <td>6808.8</td>
-              <td>15.3</td>
-            </tr>
-            <tr>
-              <th>32</th>
-              <td>bus_moving</td>
-              <td>7105.1</td>
-              <td>11.2</td>
-            </tr>
-            <tr>
-              <th>33</th>
-              <td>car_idling</td>
-              <td>2468.6</td>
-              <td>12.6</td>
-            </tr>
-            <tr>
-              <th>34</th>
-              <td>crowd</td>
-              <td>1962.3</td>
-              <td>10.1</td>
-            </tr>
-            <tr>
-              <th>35</th>
-              <td>cutting</td>
-              <td>1916.9</td>
-              <td>8.8</td>
-            </tr>
-            <tr>
-              <th>36</th>
-              <td>drilling</td>
-              <td>847.5</td>
-              <td>5.5</td>
-            </tr>
-            <tr>
-              <th>37</th>
-              <td>explosives</td>
-              <td>1.6</td>
-              <td>0.8</td>
-            </tr>
-            <tr>
-              <th>38</th>
-              <td>fireworks</td>
-              <td>7.8</td>
-              <td>2.0</td>
-            </tr>
-            <tr>
-              <th>39</th>
-              <td>horn</td>
-              <td>1753.1</td>
-              <td>1.4</td>
-            </tr>
-            <tr>
-              <th>40</th>
-              <td>impact</td>
-              <td>590.1</td>
-              <td>2.1</td>
-            </tr>
-            <tr>
-              <th>41</th>
-              <td>motorcycle_idling</td>
-              <td>329.8</td>
-              <td>7.9</td>
-            </tr>
-            <tr>
-              <th>42</th>
-              <td>motorcycle_moving</td>
-              <td>5555.2</td>
-              <td>8.1</td>
-            </tr>
-            <tr>
-              <th>43</th>
-              <td>music</td>
-              <td>7400.0</td>
-              <td>19.6</td>
-            </tr>
-            <tr>
-              <th>44</th>
-              <td>shouting</td>
-              <td>793.4</td>
-              <td>2.5</td>
-            </tr>
-            <tr>
-              <th>45</th>
-              <td>siren</td>
-              <td>4513.3</td>
-              <td>13.4</td>
-            </tr>
-            <tr>
-              <th>46</th>
-              <td>steps</td>
-              <td>393.2</td>
-              <td>4.3</td>
-            </tr>
-            <tr>
-              <th>47</th>
-              <td>talk</td>
-              <td>5329.2</td>
-              <td>5.7</td>
-            </tr>
-            <tr>
-              <th>48</th>
-              <td>water</td>
-              <td>279.7</td>
-              <td>16.5</td>
+              <td style="text-align: center">water</td>
+              <td style="text-align: center">17</td>
+              <td style="text-align: center">279.7</td>
+              <td style="text-align: center">16.5</td>
             </tr>
           </tbody>
         </table>

@@ -133,7 +133,6 @@ def PSD_plot(df, station, label):
     label_names = ' - '.join(label)
 
     title = 'Mean psd of [ %s ] in [ %s ]' %(label_names, stations_names)
-
     plt.xlabel('Frequency (Hz)'), plt.ylabel('Power spectral density ($dB/Hz)$') 
     plt.title(title)
     plt.legend()

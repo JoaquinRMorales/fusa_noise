@@ -1,11 +1,14 @@
 <div align  = "center">
-    <font size="+3"> FuSA Audio Analysis </font>
+    <h1> FuSA Audio Analysis </h1>
 </div>
 
-
+<br>
+</br>
 
 <body>
-    <h2><font size="+2"> Authors </font></h2>
+    <div align  = "center">
+        <h2> Authors </h2>
+    </div>
     <ul style="list-style-type:none">
         <li><a href="https://github.com/vpobleteacustica">Víctor Poblete Ramírez</a><sup>1</sup></li>
         <ul style="list-style-type:none">
@@ -21,10 +24,12 @@
     </ul>
     <ol>
         <li><a href="https://www.acusticauach.cl">Acoustics Institute, Universidad Austral de Chile, Valdivia, Chile</a></li>
-        <li><a href="http://ict.uach.cl">Earth Science Institute, , Universidad Austral de Chile, Valdivia, Chile</a></li>
+        <li><a href="http://ict.uach.cl">Earth Science Institute, Universidad Austral de Chile, Valdivia, Chile</a></li>
     </ol>
     <br></br>
-    <h2><font size="+2"> Purpose </font></h2>
+    <div align  = "center">
+        <h2> Purpose </h2>
+    </div>
     <p> This work retrieves the data of given audios from several audio stations:</p>
     <ul style="list-style-type:none">
         <li>Capta stations</li>
@@ -43,181 +48,811 @@
         <table border="1" class="dataframe">
           <thead>
             <tr style="text-align: right;">
-              <th></th>
               <th>Label</th>
-              <th>Label Counts</th>
-              <th>Total Label Time [s]</th>
-              <th>Mean Duration per Label [s]</th>
+              <th>Station</th>
+              <th>Total Duration [s]</th>
+              <th>Counts</th>
+              <th>Mean duration</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>1</th>
-              <td style="text-align: center">airborne</td>
-              <td style="text-align: center">141</td>
-              <td style="text-align: center">1514.2</td>
-              <td style="text-align: center">10.7</td>
+              <th rowspan="2" valign="top">air_conditioner</th>
+              <th>capta_004</th>
+              <td>25.2</td>
+              <td>2</td>
+              <td>12.6</td>
             </tr>
             <tr>
-              <th>2</th>
-              <td style="text-align: center">air_conditioner</td>
-              <td style="text-align: center">3</td>
-              <td style="text-align: center">35.2</td>
-              <td style="text-align: center">11.7</td>
+              <th>control_acustico</th>
+              <td>10.0</td>
+              <td>1</td>
+              <td>10.0</td>
             </tr>
             <tr>
-              <th>3</th>
-              <td style="text-align: center">alarm</td>
-              <td style="text-align: center">567</td>
-              <td style="text-align: center">4163.9</td>
-              <td style="text-align: center">7.3</td>
+              <th rowspan="6" valign="top">airborne</th>
+              <th>campus_miraflores</th>
+              <td>36.2</td>
+              <td>1</td>
+              <td>36.2</td>
             </tr>
             <tr>
-              <th>4</th>
-              <td style="text-align: center">bells</td>
-              <td style="text-align: center">9</td>
-              <td style="text-align: center">14.6</td>
-              <td style="text-align: center">1.6</td>
+              <th>capta_002</th>
+              <td>64.5</td>
+              <td>3</td>
+              <td>21.5</td>
             </tr>
             <tr>
-              <th>5</th>
-              <td style="text-align: center">bird</td>
-              <td style="text-align: center">2801</td>
-              <td style="text-align: center">12513.0</td>
-              <td style="text-align: center">4.5</td>
+              <th>capta_003</th>
+              <td>37.8</td>
+              <td>2</td>
+              <td>18.9</td>
             </tr>
             <tr>
-              <th>6</th>
-              <td style="text-align: center">braking</td>
-              <td style="text-align: center">222</td>
-              <td style="text-align: center">463.0</td>
-              <td style="text-align: center">2.1</td>
+              <th>capta_004</th>
+              <td>28.7</td>
+              <td>2</td>
+              <td>14.4</td>
             </tr>
             <tr>
-              <th>7</th>
-              <td style="text-align: center">bus_idling</td>
-              <td style="text-align: center">446</td>
-              <td style="text-align: center">6808.8</td>
-              <td style="text-align: center">15.3</td>
+              <th>control_acustico</th>
+              <td>69.7</td>
+              <td>8</td>
+              <td>8.7</td>
             </tr>
             <tr>
-              <th>8</th>
-              <td style="text-align: center">bus_moving</td>
-              <td style="text-align: center">634</td>
-              <td style="text-align: center">7105.1</td>
-              <td style="text-align: center">11.2</td>
+              <th>mma</th>
+              <td>1278.4</td>
+              <td>125</td>
+              <td>10.2</td>
             </tr>
             <tr>
-              <th>9</th>
-              <td style="text-align: center">car_idling</td>
-              <td style="text-align: center">196</td>
-              <td style="text-align: center">2468.6</td>
-              <td style="text-align: center">12.6</td>
+              <th rowspan="6" valign="top">alarm</th>
+              <th>capta_002</th>
+              <td>1700.4</td>
+              <td>163</td>
+              <td>10.4</td>
             </tr>
             <tr>
-              <th>10</th>
-              <td style="text-align: center">crowd</td>
-              <td style="text-align: center">194</td>
-              <td style="text-align: center">1962.3</td>
-              <td style="text-align: center">10.1</td>
+              <th>capta_003</th>
+              <td>45.0</td>
+              <td>7</td>
+              <td>6.4</td>
             </tr>
             <tr>
-              <th>11</th>
-              <td style="text-align: center">cutting</td>
-              <td style="text-align: center">218</td>
-              <td style="text-align: center">1916.9</td>
-              <td style="text-align: center">8.8</td>
+              <th>capta_004</th>
+              <td>312.6</td>
+              <td>29</td>
+              <td>10.8</td>
             </tr>
             <tr>
-              <th>12</th>
-              <td style="text-align: center">drilling</td>
-              <td style="text-align: center">155</td>
-              <td style="text-align: center">847.5</td>
-              <td style="text-align: center">5.5</td>
+              <th>control_acustico</th>
+              <td>39.0</td>
+              <td>12</td>
+              <td>3.2</td>
             </tr>
             <tr>
-              <th>13</th>
-              <td style="text-align: center">explosives</td>
-              <td style="text-align: center">2</td>
-              <td style="text-align: center">1.6</td>
-              <td style="text-align: center">0.8</td>
+              <th>mma</th>
+              <td>105.1</td>
+              <td>10</td>
+              <td>10.5</td>
             </tr>
             <tr>
-              <th>14</th>
-              <td style="text-align: center">fireworks</td>
-              <td style="text-align: center">4</td>
-              <td style="text-align: center">7.8</td>
-              <td style="text-align: center">2.0</td>
+              <th>vit_global</th>
+              <td>1961.5</td>
+              <td>346</td>
+              <td>5.7</td>
             </tr>
             <tr>
-              <th>15</th>
-              <td style="text-align: center">horn</td>
-              <td style="text-align: center">1294</td>
-              <td style="text-align: center">1753.1</td>
-              <td style="text-align: center">1.4</td>
+              <th rowspan="3" valign="top">bells</th>
+              <th>capta_002</th>
+              <td>10.0</td>
+              <td>6</td>
+              <td>1.7</td>
             </tr>
             <tr>
-              <th>16</th>
-              <td style="text-align: center">impact</td>
-              <td style="text-align: center">286</td>
-              <td style="text-align: center">590.1</td>
-              <td style="text-align: center">2.1</td>
+              <th>capta_003</th>
+              <td>1.1</td>
+              <td>1</td>
+              <td>1.1</td>
             </tr>
             <tr>
-              <th>17</th>
-              <td style="text-align: center">motorcycle_idling</td>
-              <td style="text-align: center">42</td>
-              <td style="text-align: center">329.8</td>
-              <td style="text-align: center">7.9</td>
+              <th>capta_004</th>
+              <td>3.4</td>
+              <td>2</td>
+              <td>1.7</td>
             </tr>
             <tr>
-              <th>18</th>
-              <td style="text-align: center">motorcycle_moving</td>
-              <td style="text-align: center">689</td>
-              <td style="text-align: center">5555.2</td>
-              <td style="text-align: center">8.1</td>
+              <th rowspan="7" valign="top">bird</th>
+              <th>campus_miraflores</th>
+              <td>597.3</td>
+              <td>101</td>
+              <td>5.9</td>
             </tr>
             <tr>
-              <th>19</th>
-              <td style="text-align: center">music</td>
-              <td style="text-align: center">378</td>
-              <td style="text-align: center">7400.0</td>
-              <td style="text-align: center">19.6</td>
+              <th>capta_002</th>
+              <td>8841.1</td>
+              <td>1671</td>
+              <td>5.3</td>
             </tr>
             <tr>
-              <th>20</th>
-              <td style="text-align: center">shouting</td>
-              <td style="text-align: center">317</td>
-              <td style="text-align: center">793.4</td>
-              <td style="text-align: center">2.5</td>
+              <th>capta_003</th>
+              <td>435.6</td>
+              <td>103</td>
+              <td>4.2</td>
             </tr>
             <tr>
-              <th>21</th>
-              <td style="text-align: center">siren</td>
-              <td style="text-align: center">337</td>
-              <td style="text-align: center">4513.3</td>
-              <td style="text-align: center">13.4</td>
+              <th>capta_004</th>
+              <td>520.5</td>
+              <td>201</td>
+              <td>2.6</td>
             </tr>
             <tr>
-              <th>22</th>
-              <td style="text-align: center">steps</td>
-              <td style="text-align: center">92</td>
-              <td style="text-align: center">393.2</td>
-              <td style="text-align: center">4.3</td>
+              <th>control_acustico</th>
+              <td>759.6</td>
+              <td>173</td>
+              <td>4.4</td>
             </tr>
             <tr>
-              <th>23</th>
-              <td style="text-align: center">talk</td>
-              <td style="text-align: center">940</td>
-              <td style="text-align: center">5329.2</td>
-              <td style="text-align: center">5.7</td>
+              <th>mma</th>
+              <td>543.0</td>
+              <td>209</td>
+              <td>2.6</td>
             </tr>
             <tr>
-              <th>24</th>
-              <td style="text-align: center">water</td>
-              <td style="text-align: center">17</td>
-              <td style="text-align: center">279.7</td>
-              <td style="text-align: center">16.5</td>
+              <th>vit_global</th>
+              <td>812.5</td>
+              <td>343</td>
+              <td>2.4</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">braking</th>
+              <th>capta_002</th>
+              <td>165.0</td>
+              <td>66</td>
+              <td>2.5</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>48.6</td>
+              <td>32</td>
+              <td>1.5</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>162.5</td>
+              <td>71</td>
+              <td>2.3</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>5.4</td>
+              <td>5</td>
+              <td>1.1</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>60.7</td>
+              <td>33</td>
+              <td>1.8</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>20.4</td>
+              <td>15</td>
+              <td>1.4</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">bus_idling</th>
+              <th>campus_miraflores</th>
+              <td>12.4</td>
+              <td>1</td>
+              <td>12.4</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>1855.1</td>
+              <td>99</td>
+              <td>18.7</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>83.8</td>
+              <td>12</td>
+              <td>7.0</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>4122.6</td>
+              <td>238</td>
+              <td>17.3</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>50.0</td>
+              <td>5</td>
+              <td>10.0</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>326.5</td>
+              <td>38</td>
+              <td>8.6</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>358.4</td>
+              <td>53</td>
+              <td>6.8</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">bus_moving</th>
+              <th>campus_miraflores</th>
+              <td>302.3</td>
+              <td>33</td>
+              <td>9.2</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>4120.7</td>
+              <td>329</td>
+              <td>12.5</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>470.6</td>
+              <td>52</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>1796.6</td>
+              <td>169</td>
+              <td>10.6</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>111.3</td>
+              <td>12</td>
+              <td>9.3</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>199.7</td>
+              <td>22</td>
+              <td>9.1</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>103.4</td>
+              <td>17</td>
+              <td>6.1</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">car_idling</th>
+              <th>campus_miraflores</th>
+              <td>10.5</td>
+              <td>1</td>
+              <td>10.5</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>1139.5</td>
+              <td>67</td>
+              <td>17.0</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>192.4</td>
+              <td>18</td>
+              <td>10.7</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>599.8</td>
+              <td>42</td>
+              <td>14.3</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>30.4</td>
+              <td>4</td>
+              <td>7.6</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>284.8</td>
+              <td>32</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>211.4</td>
+              <td>32</td>
+              <td>6.6</td>
+            </tr>
+            <tr>
+              <th rowspan="5" valign="top">crowd</th>
+              <th>capta_002</th>
+              <td>361.8</td>
+              <td>49</td>
+              <td>7.4</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>658.5</td>
+              <td>29</td>
+              <td>22.7</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>687.7</td>
+              <td>88</td>
+              <td>7.8</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>62.9</td>
+              <td>7</td>
+              <td>9.0</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>191.6</td>
+              <td>21</td>
+              <td>9.1</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">cutting</th>
+              <th>capta_002</th>
+              <td>935.1</td>
+              <td>85</td>
+              <td>11.0</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>312.9</td>
+              <td>46</td>
+              <td>6.8</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>119.3</td>
+              <td>7</td>
+              <td>17.0</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>357.9</td>
+              <td>50</td>
+              <td>7.2</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>179.8</td>
+              <td>26</td>
+              <td>6.9</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>12.8</td>
+              <td>4</td>
+              <td>3.2</td>
+            </tr>
+            <tr>
+              <th rowspan="4" valign="top">drilling</th>
+              <th>capta_002</th>
+              <td>389.2</td>
+              <td>57</td>
+              <td>6.8</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>299.0</td>
+              <td>74</td>
+              <td>4.0</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>59.4</td>
+              <td>3</td>
+              <td>19.8</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>99.6</td>
+              <td>21</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <th>explosives</th>
+              <th>mma</th>
+              <td>1.6</td>
+              <td>2</td>
+              <td>0.8</td>
+            </tr>
+            <tr>
+              <th>fireworks</th>
+              <th>mma</th>
+              <td>7.8</td>
+              <td>4</td>
+              <td>2.0</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">horn</th>
+              <th>campus_miraflores</th>
+              <td>0.5</td>
+              <td>1</td>
+              <td>0.5</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>469.4</td>
+              <td>333</td>
+              <td>1.4</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>72.3</td>
+              <td>36</td>
+              <td>2.0</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>208.6</td>
+              <td>187</td>
+              <td>1.1</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>13.2</td>
+              <td>10</td>
+              <td>1.3</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>345.4</td>
+              <td>181</td>
+              <td>1.9</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>643.7</td>
+              <td>546</td>
+              <td>1.2</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">impact</th>
+              <th>capta_002</th>
+              <td>382.3</td>
+              <td>182</td>
+              <td>2.1</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>43.1</td>
+              <td>25</td>
+              <td>1.7</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>77.4</td>
+              <td>36</td>
+              <td>2.2</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>40.9</td>
+              <td>17</td>
+              <td>2.4</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>17.6</td>
+              <td>8</td>
+              <td>2.2</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>27.4</td>
+              <td>18</td>
+              <td>1.5</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">motorcycle_idling</th>
+              <th>capta_002</th>
+              <td>103.2</td>
+              <td>15</td>
+              <td>6.9</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>7.1</td>
+              <td>1</td>
+              <td>7.1</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>150.4</td>
+              <td>11</td>
+              <td>13.7</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>10.0</td>
+              <td>1</td>
+              <td>10.0</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>33.7</td>
+              <td>9</td>
+              <td>3.7</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>25.5</td>
+              <td>5</td>
+              <td>5.1</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">motorcycle_moving</th>
+              <th>capta_002</th>
+              <td>1480.1</td>
+              <td>134</td>
+              <td>11.0</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>191.8</td>
+              <td>27</td>
+              <td>7.1</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>333.4</td>
+              <td>42</td>
+              <td>7.9</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>5.0</td>
+              <td>1</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>1848.3</td>
+              <td>208</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>1696.6</td>
+              <td>277</td>
+              <td>6.1</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">music</th>
+              <th>campus_miraflores</th>
+              <td>12.3</td>
+              <td>2</td>
+              <td>6.2</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>1130.9</td>
+              <td>62</td>
+              <td>18.2</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>2668.3</td>
+              <td>117</td>
+              <td>22.8</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>3288.3</td>
+              <td>159</td>
+              <td>20.7</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>65.0</td>
+              <td>7</td>
+              <td>9.3</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>229.9</td>
+              <td>30</td>
+              <td>7.7</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>5.1</td>
+              <td>1</td>
+              <td>5.1</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">shouting</th>
+              <th>capta_002</th>
+              <td>319.1</td>
+              <td>132</td>
+              <td>2.4</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>19.8</td>
+              <td>13</td>
+              <td>1.5</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>292.0</td>
+              <td>97</td>
+              <td>3.0</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>99.9</td>
+              <td>45</td>
+              <td>2.2</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>59.8</td>
+              <td>26</td>
+              <td>2.3</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>3.2</td>
+              <td>4</td>
+              <td>0.8</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">siren</th>
+              <th>campus_miraflores</th>
+              <td>64.9</td>
+              <td>2</td>
+              <td>32.4</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>1694.9</td>
+              <td>98</td>
+              <td>17.3</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>63.5</td>
+              <td>4</td>
+              <td>15.9</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>165.6</td>
+              <td>11</td>
+              <td>15.1</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>12.2</td>
+              <td>2</td>
+              <td>6.1</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>2367.5</td>
+              <td>197</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>146.1</td>
+              <td>23</td>
+              <td>6.4</td>
+            </tr>
+            <tr>
+              <th rowspan="6" valign="top">steps</th>
+              <th>campus_miraflores</th>
+              <td>6.7</td>
+              <td>2</td>
+              <td>3.4</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>193.8</td>
+              <td>31</td>
+              <td>6.3</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>162.2</td>
+              <td>47</td>
+              <td>3.5</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>19.3</td>
+              <td>7</td>
+              <td>2.8</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>9.6</td>
+              <td>4</td>
+              <td>2.4</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>1.2</td>
+              <td>1</td>
+              <td>1.2</td>
+            </tr>
+            <tr>
+              <th rowspan="7" valign="top">talk</th>
+              <th>campus_miraflores</th>
+              <td>28.2</td>
+              <td>4</td>
+              <td>7.0</td>
+            </tr>
+            <tr>
+              <th>capta_002</th>
+              <td>1918.4</td>
+              <td>398</td>
+              <td>4.8</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>1488.1</td>
+              <td>128</td>
+              <td>11.6</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>1599.2</td>
+              <td>305</td>
+              <td>5.2</td>
+            </tr>
+            <tr>
+              <th>control_acustico</th>
+              <td>213.1</td>
+              <td>80</td>
+              <td>2.7</td>
+            </tr>
+            <tr>
+              <th>mma</th>
+              <td>77.6</td>
+              <td>22</td>
+              <td>3.5</td>
+            </tr>
+            <tr>
+              <th>vit_global</th>
+              <td>4.3</td>
+              <td>3</td>
+              <td>1.4</td>
+            </tr>
+            <tr>
+              <th rowspan="3" valign="top">water</th>
+              <th>capta_002</th>
+              <td>246.4</td>
+              <td>15</td>
+              <td>16.4</td>
+            </tr>
+            <tr>
+              <th>capta_003</th>
+              <td>3.2</td>
+              <td>1</td>
+              <td>3.2</td>
+            </tr>
+            <tr>
+              <th>capta_004</th>
+              <td>30.0</td>
+              <td>1</td>
+              <td>30.0</td>
             </tr>
           </tbody>
         </table>

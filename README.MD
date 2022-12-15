@@ -43,9 +43,9 @@
         <li>control_acustico</li>
         <li>vit_global</li>
     </ul>
-    <p> Data was labelled by AUMILAB<sup>1</sup> group, classifying sections of those audios with certain * *taxonomy* * (**table**). We cut the
+    <p> Data was labelled by AUMILAB<sup>1</sup> group, classifying sections of those audios with certain **taxonomy** (**table**). We cut the
     audio in two ways.
-    First, using the data (ex: dog started in T<sub>i</sub>, ended in T<sub>f</sub>, and it's in this audio * *audio1.wav* *) generated after the labelling procress, we retrieve in * *wav* * extension the **events** (events are labelled audio, therefore, it's inside in our * *taxonomy* *).
+    First, using the data (ex: dog started in T<sub>i</sub>, ended in T<sub>f</sub>, and it's in this audio *audio1.wav*) generated after the labelling procress, we retrieve in *wav* extension the **events** (events are labelled audio, therefore, it's inside in our *taxonomy*).
     Second, we took the uncutted audio files and labelled them as **noise**, then noise is, in this step, all unlabelled audio.  
     </p>
 </body>

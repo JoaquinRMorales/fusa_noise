@@ -208,7 +208,8 @@
       <td>2.4</td>
     </tr>
     <tr>
-      <th rowspan="6" valign="top">braking</th>
+      <th rowspan="6" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207757911-f454e960-9caf-4c13-a5ea-0c7e1d7d5385.mp4
+">braking</a></th>
       <th>capta_002</th>
       <td>165.0</td>
       <td>66</td>
@@ -245,7 +246,8 @@
       <td>1.4</td>
     </tr>
     <tr>
-      <th rowspan="7" valign="top">bus_idling</th>
+      <th rowspan="7" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207758144-ec5dde9d-d683-4bef-a5de-5813a7a114ad.mp4
+">bus_idling</a></th>
       <th>campus_miraflores</th>
       <td>12.4</td>
       <td>1</td>

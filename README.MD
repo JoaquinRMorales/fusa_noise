@@ -49,36 +49,7 @@
 
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
-      <th>Label</th>
-      <th>Station</th>
-      <th>Total Duration [s]</th>
-      <th>Counts</th>
-      <th>Mean duration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="center"></th>
-      <th>capta_004</th>
-      <td>25.2</td>
-      <td>2</td>
-      <td>12.6</td>
-    </tr>
-    <tr>
-      <th>control_acustico</th>
-      <td>10.0</td>
-      <td>1</td>
-      <td>10.0</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="center">
-                
-      <th>campus_miraflores</th>
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th>label</th>
       <th>station</th>
       <th>Total Duration [s]</th>
@@ -88,7 +59,7 @@
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner</a></th>
+      <th rowspan="2" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner</a></th>
       <th>capta_004</th>
       <td>25.2</td>
       <td>2</td>
@@ -101,7 +72,7 @@
       <td>10.0</td>
     </tr>
     <tr>
-      <th rowspan="6" valign="top"><a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne</a></th></th>
+      <th rowspan="6" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne</a></th></th>
       <th>campus_miraflores</th>
       <td>36.2</td>
       <td>1</td>

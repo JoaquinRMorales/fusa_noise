@@ -52,7 +52,8 @@
     Second, we took the uncutted audio files and labelled them as <b>noise</b>, then noise is, in this step, all unlabelled audio.  
     </p>
 </body>
-<table border="1" class="dataframe">
+<div align = "center">
+<table border="1" class="dataframe" >
   <thead>
     <tr style="text-align: center;">
       <th>label</th>
@@ -908,3 +909,4 @@
     </tr>
   </tbody>
 </table>
+</div>

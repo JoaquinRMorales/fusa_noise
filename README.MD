@@ -51,7 +51,7 @@
     <th>Birds</th>
   </tr>
   <tr>
-    <th>https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4</th>
+    <th><iframe id="video" width="100" height="20" src=https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4 allow="autoplay; encrypted-media" frameborder="0"></iframe></th>
   </tr>
 
 <table>

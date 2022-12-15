@@ -51,7 +51,6 @@
   <thead>
     <tr style="text-align: right;">
       <th>Label</th>
-      <th>Example audio</th>
       <th>Station</th>
       <th>Total Duration [s]</th>
       <th>Counts</th>
@@ -60,7 +59,6 @@
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="center">air_conditioner</th>
       <th rowspan="2" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner.wav</a></th>
       <th>capta_004</th>
       <td>25.2</td>
@@ -74,8 +72,7 @@
       <td>10.0</td>
     </tr>
     <tr>
-      <th rowspan="6" valign="center">airborne</th>
-            <th rowspan="2" valign="center">
+      <th rowspan="2" valign="center">
                 <a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne.wav</a></th>
       <th>campus_miraflores</th>
       <td>36.2</td>

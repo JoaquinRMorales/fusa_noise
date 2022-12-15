@@ -61,7 +61,7 @@
   <tbody>
     <tr>
       <th rowspan="2" valign="center">air_conditioner</th>
-      <th rowspan="2" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207751463-79f36d2f-b0c6-4dca-94b3e7ce26a0f2c8.mp4">airborne</a></th>
+      <th rowspan="2" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner.wav</a></th>
       <th>capta_004</th>
       <td>25.2</td>
       <td>2</td>
@@ -76,7 +76,7 @@
     <tr>
       <th rowspan="6" valign="center">airborne</th>
             <th rowspan="2" valign="center">
-                <a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne</a></th>
+                <a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne.wav</a></th>
       <th>campus_miraflores</th>
       <td>36.2</td>
       <td>1</td>

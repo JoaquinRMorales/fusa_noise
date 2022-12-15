@@ -79,10 +79,6 @@
       <td>36.2</td>
       <td>1</td>
       <td>36.2</td>
-      <td>
-
-https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4
-      </td>
     </tr>
     <tr>
       <th>capta_002</th>
@@ -120,7 +116,7 @@ https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-
       <td>1700.4</td>
       <td>163</td>
       <td>10.4</td>
-      <td>https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4</td>
+      <td></td>
     </tr>
     <tr>
       <th>capta_003</th>
@@ -158,10 +154,6 @@ https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-
       <td>10.0</td>
       <td>6</td>
       <td>1.7</td>
-      <td>
-
-https://user-images.githubusercontent.com/22757103/207751913-80e65690-566a-4d4a-b9b9-aa1f6011db21.mp4
-      </td>
     </tr>
     <tr>
       <th>capta_003</th>
@@ -181,10 +173,6 @@ https://user-images.githubusercontent.com/22757103/207751913-80e65690-566a-4d4a-
       <td>597.3</td>
       <td>101</td>
       <td>5.9</td>
-      <td>
-
-https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4
-      </td>
     </tr>
     <tr>
       <th>capta_002</th>
@@ -873,3 +861,10 @@ https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-
     </tr>
   </tbody>
 </table>
+
+airborne
+https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4
+
+https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4
+https://user-images.githubusercontent.com/22757103/207751913-80e65690-566a-4d4a-b9b9-aa1f6011db21.mp4
+https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4

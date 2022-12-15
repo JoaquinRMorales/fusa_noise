@@ -124,10 +124,7 @@ https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-
       <td>1700.4</td>
       <td>163</td>
       <td>10.4</td>
-      <td>
-
-https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4
-      </td>
+      <td>https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4</td>
     </tr>
     <tr>
       <th>capta_003</th>

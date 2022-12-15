@@ -59,7 +59,7 @@
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner.wav</a></th>
+      <th rowspan="2" valign="center"></th>
       <th>capta_004</th>
       <td>25.2</td>
       <td>2</td>
@@ -73,7 +73,35 @@
     </tr>
     <tr>
       <th rowspan="2" valign="center">
-                <a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne.wav</a></th>
+                
+      <th>campus_miraflores</th>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>label</th>
+      <th>station</th>
+      <th>Total Duration [s]</th>
+      <th>Counts</th>
+      <th>Mean duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top"><a href="https://user-images.githubusercontent.com/22757103/207756207-2742e556-2f13-4af3-b3ab-d4112dcf6c8f.mp4">air_conditioner</a></th>
+      <th>capta_004</th>
+      <td>25.2</td>
+      <td>2</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <th>control_acustico</th>
+      <td>10.0</td>
+      <td>1</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th rowspan="6" valign="top"><a href="https://user-images.githubusercontent.com/22757103/207751563-b1c84832-aa77-4b5a-b22c-a6293ea7f861.mp4">airborne</a></th></th>
       <th>campus_miraflores</th>
       <td>36.2</td>
       <td>1</td>
@@ -110,12 +138,11 @@
       <td>10.2</td>
     </tr>
     <tr>
-      <th rowspan="6" valign="center">alarm</th>
+      <th rowspan="6" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4">alarm</a></th>
       <th>capta_002</th>
       <td>1700.4</td>
       <td>163</td>
       <td>10.4</td>
-      <td></td>
     </tr>
     <tr>
       <th>capta_003</th>
@@ -148,7 +175,7 @@
       <td>5.7</td>
     </tr>
     <tr>
-      <th rowspan="3" valign="center">bells</th>
+      <th rowspan="3" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207751913-80e65690-566a-4d4a-b9b9-aa1f6011db21.mp4">bells</a></th>
       <th>capta_002</th>
       <td>10.0</td>
       <td>6</td>
@@ -167,7 +194,7 @@
       <td>1.7</td>
     </tr>
     <tr>
-      <th rowspan="7" valign="center">bird</th>
+      <th rowspan="7" valign="center"><a href="https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4">bird</a></th>
       <th>campus_miraflores</th>
       <td>597.3</td>
       <td>101</td>
@@ -442,6 +469,49 @@
       <td>12.8</td>
       <td>4</td>
       <td>3.2</td>
+    </tr>
+    <tr>
+      <th rowspan="7" valign="top">dog</th>
+      <th>campus_miraflores</th>
+      <td>49.2</td>
+      <td>4</td>
+      <td>12.3</td>
+    </tr>
+    <tr>
+      <th>capta_002</th>
+      <td>5539.9</td>
+      <td>2141</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <th>capta_003</th>
+      <td>146.7</td>
+      <td>70</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>capta_004</th>
+      <td>739.3</td>
+      <td>323</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>control_acustico</th>
+      <td>1456.1</td>
+      <td>539</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <th>mma</th>
+      <td>276.4</td>
+      <td>178</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>vit_global</th>
+      <td>5.1</td>
+      <td>4</td>
+      <td>1.3</td>
     </tr>
     <tr>
       <th rowspan="4" valign="top">drilling</th>
@@ -860,10 +930,3 @@
     </tr>
   </tbody>
 </table>
-
-
-
-
-https://user-images.githubusercontent.com/22757103/207751767-61f1b43a-65c7-4bd7-a7f6-2aed880f8482.mp4
-https://user-images.githubusercontent.com/22757103/207751913-80e65690-566a-4d4a-b9b9-aa1f6011db21.mp4
-https://user-images.githubusercontent.com/22757103/207747655-34a40eaa-8a1b-4d3d-a19c-fc3103c35dd7.mp4

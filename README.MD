@@ -45,7 +45,10 @@
     </ul>
     <p align = "justify"> Data was labelled by AUMILAB<sup>1</sup> group, classifying sections of those audios with certain <b>taxonomy</b> (<b>table</b>). We cut the
     audio in two ways.
+    <p>
     First, using the data generated after the labelling procress (ex: dog started in T<sub>i</sub>, ended in T<sub>f</sub>, and it's in this audio <i>audio1.wav</i>), we retrieve in <i>wav</i> extension the <b>events</b> (events are labelled audio, therefore, it's inside in our <b>taxonomy</b>).
+    </p>
+    <p>
     Second, we took the uncutted audio files and labelled them as <b>noise</b>, then noise is, in this step, all unlabelled audio.  
     </p>
 </body>

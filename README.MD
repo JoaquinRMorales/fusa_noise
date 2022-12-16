@@ -47,11 +47,11 @@
             <li>capta_002</li>
             <li>capta_003</li>
             <li>capta_004</li>
-            <li>campus_miraflores</li>
+            <li>Campus Miraflores</li>
         </ul>
         <li>MMA</li>
-        <li>control_acustico</li>
-        <li>vit_global</li>
+        <li>Control Acústico</li>
+        <li>VitGlobal</li>
     </ul>
     <p align = "justify"> Data was labelled by AUMILAB<sup>1</sup> group, a process of clasification for sections of those audios with certain <b>taxonomy</b> (<b>table</b>). We cut the audios in two courses of action.
     <p>

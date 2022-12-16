@@ -27,9 +27,19 @@
         <li><a href="http://ict.uach.cl">Earth Science Institute, Universidad Austral de Chile, Valdivia, Chile</a></li>
     </ol>
     <br></br>
-    <div align  = "center">
-        <h2> Purpose </h2>
-    </div>
+ 
+<div>
+    <h2>Description</h2>
+</div>
+<div>
+    <p align="justify">This repository it's inspired and has been provided with data by the Fondef project <a href= "https://www.acusticauach.cl/?p=13965">FuSA System</a>, FuSA stands for Ambiental Sound Sources by it's meaning in spanish. Using the <sub>audio's metadata</sub> generated with the purpose to be analyzed by machine learning, we wanted to describe the stations quality after detecting in the <b>labelling</b> process static noise and other curious features in some audio tracks.
+    </p>
+</div>
+    
+<div align  = "center">
+    <h2> Methodology </h2>
+</div>
+<div>
     <p> This work retrieves the data of given audios from several audio stations:</p>
     <ul style="list-style-type:none">
         <li>Capta stations</li>
@@ -51,13 +61,14 @@
     <p>
     Second, we took the uncutted audio files and labelled them as <b>noise</b>, then noise is, in this step, all unlabelled audio.  
     </p>
+</div>
 </body>
 <br></br>
 <details>
     <summary>
         <b>Table</b>.<i> Taxonomy used for classify process with hearable audio examples, total duration for each event in each station, counts of labels and mean duration.</i>
     </summary>
-<div align = "center" style="overflow-y : scroll; height:400px;">
+<div align = "center">
 <table border="1" class="dataframe" >
   <thead>
     <tr style="text-align: center;">

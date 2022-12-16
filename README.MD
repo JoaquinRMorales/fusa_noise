@@ -32,7 +32,7 @@
     <h2>Description</h2>
 </div>
 <div>
-    <p align="justify">This repository it's inspired and has been provided with data by the Fondef project <a href= "https://www.acusticauach.cl/?p=13965">FuSA System</a>, FuSA stands for Ambiental Sound Sources by it's meaning in spanish. Using the <sub>audio's metadata</sub> generated with the purpose to be analyzed by machine learning, we wanted to describe the stations quality after detecting in the <b>labelling</b> process static noise and other curious features in some audio tracks.
+    <p align="justify">This repository it's inspired and has been provided with data by the Fondef project <a href= "https://www.acusticauach.cl/?p=13965">FuSA System</a>. FuSA stands for Ambiental Sound Sources by it's meaning in spanish. Using the <sub>audio's metadata</sub> generated with the purpose to be analyzed by machine learning, we wanted to describe the stations quality after detecting in the <b>labelling</b> process static noise and other curious features in some audio tracks.
     </p>
 </div>
 <br></br>

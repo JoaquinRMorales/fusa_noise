@@ -54,7 +54,7 @@
 </body>
 <details>
     <summary>
-        Table with taxonomy and audio examples, total duration for each event in each station, counts of labels and mean duration.  
+        ### Table with taxonomy and audio examples, total duration for each event in each station, counts of labels and mean duration.  
     </summary>
 <div align = "center" style="overflow-y : scroll; height:400px;">
 <table border="1" class="dataframe" >

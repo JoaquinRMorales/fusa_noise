@@ -52,6 +52,10 @@
     Second, we took the uncutted audio files and labelled them as <b>noise</b>, then noise is, in this step, all unlabelled audio.  
     </p>
 </body>
+<details>
+    <summary>
+        Table with taxonomy and audio examples, total duration for each event in each station, counts of labels and mean duration.  
+    </summary>
 <div align = "center" style="overflow-y : scroll; height:400px;">
 <table border="1" class="dataframe" >
   <thead>
@@ -910,3 +914,4 @@
   </tbody>
 </table>
 </div>
+</summary>

@@ -75,7 +75,7 @@
       <th>station</th>
       <th>Total Duration [s]</th>
       <th>Counts</th>
-      <th>Mean duration</th>
+      <th>Mean duration [s]</th>
     </tr>
   </thead>
   <tbody>

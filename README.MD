@@ -55,7 +55,7 @@
 <br></br>
 <details>
     <summary>
-        <b>Table</b>.<font size="2" color="#0504aa"> Taxonomy used for classify process with hearable audio examples, total duration for each event in each station, counts of labels and mean duration.</font>
+        <b>Table</b>.<i> Taxonomy used for classify process with hearable audio examples, total duration for each event in each station, counts of labels and mean duration.</i>
     </summary>
 <div align = "center" style="overflow-y : scroll; height:400px;">
 <table border="1" class="dataframe" >

@@ -62,9 +62,9 @@ class WavePlot():
         dfreq = freq[1]
 
         normalized_psd = psd / np.linalg.norm(psd)
-        normalized_psd_dB = 10*np.log10(normalized_psd)
+        # normalized_psd_dB = 10*np.log10(normalized_psd)
 
-        return freq, normalized_psd_dB
+        return freq, normalized_psd
 
 
     def Mean_Power_Spectral_Density(self, color):
@@ -134,6 +134,26 @@ def PSD_plot(df, station, label):
 
     title = 'Mean psd of [ %s ] in [ %s ]' %(label_names, stations_names)
     plt.xlabel('Frequency (Hz)'), plt.ylabel('Power spectral density ($dB/Hz)$') 
+    plt.title(title)
+    plt.legend()
+
+def norm_PSD_plot(df, station, label):
+
+    figure, ax = plt.subplots(figsize = (13,8))
+
+    for i in range(len(df)):
+
+        if(df.at[i, 'station'] in station):
+            if(df.at[i, 'label'] in label):
+
+                plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = 0.45)
+    
+    
+    stations_names = ' - '.join(station)
+    label_names = ' - '.join(label)
+
+    title = 'Normalized Mean PSD of [ %s ] in [ %s ]' %(label_names, stations_names)
+    plt.xlabel('Frequency (Hz)'), plt.ylabel('Relative Power spectral Density') 
     plt.title(title)
     plt.legend()
 

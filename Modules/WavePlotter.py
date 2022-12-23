@@ -137,7 +137,7 @@ def PSD_plot(df, station, label):
     plt.title(title)
     plt.legend()
 
-def norm_PSD_plot(df, station, label):
+def norm_PSD_plot(df, station, label, alpha = 0.45, semilog = True, Title = True):
 
     figure, ax = plt.subplots(figsize = (13,8))
 
@@ -145,18 +145,41 @@ def norm_PSD_plot(df, station, label):
 
         if(df.at[i, 'station'] in station):
             if(df.at[i, 'label'] in label):
-                if(df.at[i, 'label'] == 'noise'):
-                    plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], color = 'k')
-                else:
-                    plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = 0.45)
+
+
+                if(semilog == True):
+
+                    if(df.at[i, 'label'] == 'noise'):
+                        plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], color = 'k')
+
+                    else:
+                        plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = alpha)
+
+
+
+                elif(semilog == False):
+                    
+                    if(df.at[i, 'label'] == 'noise'):
+                        plt.plot(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], color = 'k')
+
+                    else:
+                        plt.plot(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = alpha)
+
+
+                
     
     
     stations_names = ' - '.join(station)
     label_names = ' - '.join(label)
 
+
     title = 'Normalized Mean PSD of [ %s ] in [ %s ]' %(label_names, stations_names)
-    plt.xlabel('Frequency (Hz)'), plt.ylabel('Relative Power spectral Density') 
-#    plt.title(title)
+    
+    plt.xlabel('Frequency (Hz)'), plt.ylabel('Power spectral Density Unit Norm') 
+
+
+    if( Title == True):
+        plt.title(title)
     plt.legend()
 
 

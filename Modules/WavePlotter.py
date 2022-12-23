@@ -1,3 +1,4 @@
+import math
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -62,8 +63,7 @@ class WavePlot():
         dfreq = freq[1]
 
         normalized_psd = psd / np.linalg.norm(psd)
-        # normalized_psd_dB = 10*np.log10(normalized_psd)
-
+        
         return freq, normalized_psd
 
 
@@ -86,7 +86,7 @@ class WavePlot():
             wav_path = folderpath + '/' + self.metadata.at[i, 'filename']
 
             wav_freq, normalized_psd_dB = self.welch_periodogram(wav_path)
-
+            
             stationFreq_aux = station_wav_freq[self.metadata.at[i, 'station']].copy()
             stationFreq_aux.append(wav_freq)
             station_wav_freq[self.metadata.at[i, 'station']] = stationFreq_aux
@@ -145,8 +145,10 @@ def norm_PSD_plot(df, station, label):
 
         if(df.at[i, 'station'] in station):
             if(df.at[i, 'label'] in label):
-
-                plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = 0.45)
+                if(df.at[i, 'label'] == 'noise'):
+                    plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], color = 'k')
+                else:
+                    plt.semilogx(df.at[i, 'X [frequency]'], df.at[i, 'Y [psd]'], label = [df.at[i, 'station'], df.at[i, 'label']], alpha = 0.45)
     
     
     stations_names = ' - '.join(station)
@@ -154,7 +156,7 @@ def norm_PSD_plot(df, station, label):
 
     title = 'Normalized Mean PSD of [ %s ] in [ %s ]' %(label_names, stations_names)
     plt.xlabel('Frequency (Hz)'), plt.ylabel('Relative Power spectral Density') 
-    plt.title(title)
+#    plt.title(title)
     plt.legend()
 
 

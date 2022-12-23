@@ -6,3 +6,6 @@ Audios/*
 DATA/*
 *checkpoints*
 NPZ/*
+audio/*
+data/*
+npz/*
